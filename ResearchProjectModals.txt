@@ -1,0 +1,334 @@
+<!--  ---------------------- Research Projects Modals ----------------------- -->
+  <!-- Auscultation Modal -->
+    <div class="modal fade" id="Auscultation" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>The main objective of the project was to passively detect patient adherence to puffer intake through an app that automatically detects when a subject uses their inhaler .  The theory was that if you are able to inform the patient that they are not properly using their inhaler at certain times, you can decrease the amount of asthma attacks.  For more detail please refer to my thesis work at <a href="https://goo.gl/B3GM6j">https://goo.gl/B3GM6j</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- BrainStateMusicMeditation Modal -->
+    <div class="modal fade" id="BrainStateMusicMeditation" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>An analysis of an adult brain state during meditation and aural stimulation through music.  The analysis was achieved using spectral source localization techniques.  The mean energy for a given frequency of each brain state (during the EEG recording of liked and disliked music) was used as a quantitative comparison between the two brain states.  It was found that the delta and alpha frequencies were dominant in both cases but the energy of the liked music was higher.  Though the music appreciation sections of the brain are unique for each individual the study found that most people had an increase in activity in the right frontal-temporal region of the brain.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- BrainStethoscope Modal -->
+    <div class="modal fade" id="BrainStethoscope" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>The main purpose of the project was to explore the benefits of EEG sonification.  Note that this is not audification which is a direct mapping to the auditory domain, but rather generating a unique mapping system to enhance specific features of EEG to be mapped into the auditory domain.  This was to allow both clinicians and patients to detect abnormalities in their brain activity when listening to their EEG signals.  Though this project’s  primary goal was to develop an EEG system for sleep staging, one can extend the knowledge base into a wide range of applications,   such as measurement of brain states, higher mental function, as well as pain and sensory loss.   The success of the project led to it becoming a module of the proprietary program DECI of “Cerebral Diagnostics Canada Inc” as a real-time auditory display of the electrical brain waves generated in advanced sleep medicine.   It was also used in the Western Hospital Sleep clinic for a sleep recording.  This project also won the innovation award at the International Conference for Up and Coming Engineers 2012. <a href="https://twitter.com/ryersonu/status/245182378153218048 ">https://twitter.com/ryersonu/status/245182378153218048 </a> <a href="http://cerebraldiagnostics.com/Ryerson/RyersonToday.htm">http://cerebraldiagnostics.com/Ryerson/RyersonToday.htm</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Seizure Modal -->
+    <div class="modal fade" id="Seizure" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>The purpose of this study was to  identify the origins of epileptic seizures in children.  My approach was to develop a model which incorporates source localized EEG current density vectors,  frequency (through continuous wavelet transform) and the anatomical location.  These three features generate a third order tensor with each node corresponding to a feature.  In theory, this can be used for both seizure localization and seizure recognition, but for the purpose of this project I only investigated seizure localization.  Though inconclusive due to the small number of patient samples, we demonstrated that tensor analysis and Parallel Factor Analysis can be used as a means of identifying complex structures of an epileptic seizure.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Alzheimers Modal -->
+    <div class="modal fade" id="Alzheimers" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>The  primary goal of this project was to develop a pipeline through which a patient can be diagnosed with Alzheimer's.  I contributed in the creation of the experimental protocol including screening and recording software by applying past protocols of various experiments found in the literature.   I also applied for IRB ethics approval as well as HIPPA and PHIPA compliant server end encryption for patient data distribution to collaborators.  Furthermore, I solely created an algorithm which extracted temporal and spatial features of a patient’s EEG and performed classification using a neural network and linear support vector machine. The novelty of this work came about through the use of EEG source localization as a basis of obtaining temporal, spatial and frequency information, along with a myriad of brain network analysis, to try and explain the underlying mechanisms of the Alzheimer's brain state.  For more information please refer to <a href="http://dementiahealth.ca/ ">http://dementiahealth.ca/ </a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+  <!-- Fibromyalgia Modal -->
+    <div class="modal fade" id="Fibromyalgia" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>The main goal of the project was to identify the underlying causes of fibromyalgia under the evoked related potential paradigm using advanced signal processing techniques and machine learning algorithms.  Patients were given precise weighted stimulations and their EEG’s were recorded.  Various averaging and feature extraction methods were applied such as magnitude and phase coherence  analysis to identify event-related desynchronization (ERD) or event-related synchronization (ERS). EEG source localization methods were also used to identify spatial information for anatomical analysis.  Neural network and support vector clustering was performed to identify clustering as well as  discrimination between patient and normal control group.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- SleepAtlas Modal -->
+    <div class="modal fade" id="SleepAtlas" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>This is the culmination of a multi year project demonstrating EEG source localization with still images and brain movies can be an innovation in front line clinical sleep medicine.  I took part in the creation of many chapters and appendices dealing with various technical entries associated with signal processing, image analysis, algorithm creation and software development. I also developed new sleep analysis tools and  contributed to current  scientific knowledge in sleep research.  For the book and more details about the  scientific contribution please refer to <a href="https://goo.gl/wNymq7">https://goo.gl/wNymq7</a> and  <a href="http://theatlasofthegeneratorsofsleep.com/">http://theatlasofthegeneratorsofsleep.com/ </a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Clustering Modal -->
+    <div class="modal fade" id="Clustering" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>I led a group of mathematicians and engineers to find an algorithm to solve a problem often encountered in source localization of MEG and EEG signals, which is the interpretation of electromagnetic fields inferred by these algorithms.  An algorithm was developed to automatically and dynamically identify temporal and spatial clustering within these fields.  Work by Nunez suggest that various electrical fields are associated with cognitive activity.  Therefore, one can identify abnormalities, brain functions and cognitive patterns using source localization of EEG and our new algorithm.<a href="https://www.fields.utoronto.ca/programs/scientific/11-12/inverseprob/IPSW/problems.html">https://www.fields.utoronto.ca/programs/scientific/11-12/inverseprob/IPSW/problems.html </a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  <!-- BCIMotor Modal -->
+    <div class="modal fade" id="BCIMotor" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p> An EEG source localization analysis of a 64-channel EEG motor movement and imagery recording consisting of 64 subjects with 14 experimental tasks.  These tasks include the baseline eyes open and eyes closed brain states as well as the typical motor movement and imagery paradigm. Subjects were told to physically move their fists and feet and also imagine them performing those tasks.  Using 3D mean spectral source localization techniques, I identified that left and right brain regions were significantly different in all 14 experimental tasks.  Based on current research, one would suspect event related desynchronization (ERD) to occur, but I did not find this to be the case with our experimental group.  One significant finding from this study was the identification of the brain regions which correspond to the wrist area on the left brain for controlling the right wrist.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- P300 Modal -->
+    <div class="modal fade" id="P300" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>The main purpose of the study was to create a foundation for future work in the field of BCI, specifically in the language decoding areas.  I used the typical AEP paradigm.  However, I did not follow the typical P300 analysis in which analysis is made 300ms after the stimulus.  Rather I looked at the time at which the stimulus was applied and when the brain reacted to it.  The analysis was not for classification purposes but rather to try and understand the underlying cause or network pattern for when a person is thinking or trying to identify a heard phoneme.  To achieve this I used the algorithm I helped develop at the Fields Institute.  <a href="https://www.fields.utoronto.ca/programs/scientific/11-12/inverseprob/IPSW/problems.html">https://www.fields.utoronto.ca/programs/scientific/11-12/inverseprob/IPSW/problems.html </a></p>
+            <p>I observed clustering of electrical activity using the “clustering algorithm” in various brain regions during this short epoch.  The results were inconclusive as some patients had very high source localized activity in the right uncus migrating to the right inferior temporal gyrus, while others had a combination of the precentral, postcentral, and superior parietal lobule. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- WordDetection Modal -->
+    <div class="modal fade" id="WordDetection" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>The inconsistency of phoneme generation may have been too large with respect to inter subject variability,  thus, in this pilot study I opted to use whole words instead.  I tried to extend work done by Aushivan et.al, where they found a way to isolate signals with 99% accuracy using imagined words using images of EEG’s rather than the time varying multichannel signal.  I used images generated by 3D EEG source localization techniques along with machine learning to perform the same task but in real-time.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- CapProject Modal -->
+    <div class="modal fade" id="CapProject" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>There is a need to create a portable EEG cap that is safe and affordable and a module to extract EEG signals in a non clinical setting that can be used long term.  Therefore, the goal of this project was to use pre-existing technology to develop a wireless EEG for long term EEG monitoring in the real world setting using WiFi.  With the help of Dr.Ma, I led a team of 4 students to facilitate a prototype of the EEG amplifier and cap.  I was in charge of making sure the design of the cap coincided with the standard 10/20 system and choose appropriate materials for the cap for easy cleaning and storing.  I was also in charge of making sure the amplifier designed matched with the standard sampling rate, noise reduction, amplification and impedance tolerance.   The novel approach was to develop a compressed sensing based sampling rate such that the incoming signal can be as small as possible and that can also simultaneously reduce noise and extract meaningful information.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <!-- PreProcessing Modal -->
+    <div class="modal fade" id="PreProcessing" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>EEG is considered to have a very high signal to noise ratio (SNR), and as such we need to develop tools to minimize or remove noise.  I implemented and designed many EEG noise reduction techniques as new modules and supporting scripts for the proritetry program of Cerebral Diagnostics Canada Inc.  This includes the utilization of the following algorithms:
+              <ul>
+                <li>Independent component analysis for eye blink removal</li>
+                <li>Cumulative baseline removal</li>
+                <li>Wavelet decomposition thresholding for muscle artifact rejection</li>
+                <li>Matrix generation for removal of paired electrodes in the EEG source localization algorithm</li>
+                <li>Wavelet decomposition thresholding for muscle artifact rejection</li>
+                <li>Empirical Mode Decomposition thresholding for muscle artifact rejection</li>
+                <li>Notch filtering</li>
+              </ul>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Auscultation Modal -->
+    <div class="modal fade" id="Auscultation" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>The main objective of the project was to passively detect patient adherence to puffer intake through an app that automatically detects when a subject uses their inhaler .  The theory was that if you are able to inform the patient that they are not properly using their inhaler at certain times, you can decrease the amount of asthma attacks.  For more detail please refer to my thesis work at <a href="https://goo.gl/B3GM6j">https://goo.gl/B3GM6j</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Auscultation Modal -->
+    <div class="modal fade" id="Auscultation" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>The main objective of the project was to passively detect patient adherence to puffer intake through an app that automatically detects when a subject uses their inhaler .  The theory was that if you are able to inform the patient that they are not properly using their inhaler at certain times, you can decrease the amount of asthma attacks.  For more detail please refer to my thesis work at <a href="https://goo.gl/B3GM6j">https://goo.gl/B3GM6j</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Auscultation Modal -->
+    <div class="modal fade" id="Auscultation" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>The main objective of the project was to passively detect patient adherence to puffer intake through an app that automatically detects when a subject uses their inhaler .  The theory was that if you are able to inform the patient that they are not properly using their inhaler at certain times, you can decrease the amount of asthma attacks.  For more detail please refer to my thesis work at <a href="https://goo.gl/B3GM6j">https://goo.gl/B3GM6j</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Auscultation Modal -->
+    <div class="modal fade" id="Auscultation" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>The main objective of the project was to passively detect patient adherence to puffer intake through an app that automatically detects when a subject uses their inhaler .  The theory was that if you are able to inform the patient that they are not properly using their inhaler at certain times, you can decrease the amount of asthma attacks.  For more detail please refer to my thesis work at <a href="https://goo.gl/B3GM6j">https://goo.gl/B3GM6j</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Auscultation Modal -->
+    <div class="modal fade" id="Auscultation" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Description</h4>
+          </div>
+          <div class="modal-body">
+            <p>The main objective of the project was to passively detect patient adherence to puffer intake through an app that automatically detects when a subject uses their inhaler .  The theory was that if you are able to inform the patient that they are not properly using their inhaler at certain times, you can decrease the amount of asthma attacks.  For more detail please refer to my thesis work at <a href="https://goo.gl/B3GM6j">https://goo.gl/B3GM6j</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    
+    
+
+    
+
+    
+
+
+
+    

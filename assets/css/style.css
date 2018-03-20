@@ -208,7 +208,7 @@ h6 {
 
 /*btn-info*/
 .btn-info{
-    background-color:#52b3d9;
+    background-color:#02acee;
     border-color: rgba(51, 51, 51, 0.15);
 }
 
@@ -325,7 +325,7 @@ ul.list-check li::before {
 
 
 #home {
-	background: url(../images/home2.jpg) no-repeat center center;
+	background: url(../images/ai.jpg) no-repeat center center;
 	-webkit-background-attachment: fixed;
     background-attachment: fixed;
 	background-color: #222;
@@ -361,7 +361,7 @@ ul.list-check li::before {
 	font-size: 60px;
 	line-height: 80px;
 	margin-bottom: 16px;
-	color: #52b3d9;
+	color: #02acee;
 }
 .intro h1 span{
 	color: #68c3a3;
@@ -629,10 +629,11 @@ SOCIAL ICON
 /* === Video Section === */
 
 .video-section {
-    background: url(../images/video-bg.jpg) no-repeat center center;
+    background: url(../images/Artificial-Intelligence-Powered-Banking.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
     min-height: 500px;
+    
 }
 
 .video-intro {
@@ -1272,7 +1273,7 @@ Resume Timeline
 
 /* === Facts Section === */
 .facts-section {
-    background: url(../../assets/images/counter-bg.jpg) no-repeat center center;
+    background: url(../../assets/images/science.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     color: #fff;  
@@ -1437,9 +1438,9 @@ Icon for all respective meta
 
 /* === Hire Section === */
 .hire-section {
-    background: url(../../assets/images/hire-bg.jpg) no-repeat top center #68C3A3;
-    background-attachment: fixed;
-    background-size: cover;
+    background: url(../images/Artificial-Intelligence-Powered-Banking.jpg) no-repeat top center #68C3A3;
+    background-attachment: fixed;    
+    background-size: 100% 80%;
     color: #fff;  
 }
 .hire-section-bg {
