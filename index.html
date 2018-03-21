@@ -50,17 +50,18 @@
             <p>I use my knowledge in signal processing and machine learning techniques to solve various problems spanning from biological to audio and image applications<br> </p>
             <div class="social-icons">
                <ul class="list-inline">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                  <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                  <li><a href="#about"><i class="fa fa-user" data-toggle="tooltip" title="About Me"></i></a></li>
+                  <li><a href="#about"><i class="fa fa-file-text" data-toggle="tooltip" title="Resume"></i></a></li>
+                  <li><a href="#skills"><i class="fa fa-cog" data-toggle="tooltip" title="Skills"></i></a></li>
+                  <li><a href="#works"><i class="fa fa-desktop" data-toggle="tooltip" title="Projects"></i></a></li>
+                  <li><a href="#blog"><i class="fa fa-database" data-toggle="tooltip" title="Blog"></i></a></li>
                </ul>
             </div>
             <!-- /.social-icons -->
          </div>
-         <div class="mouse-icon">
-            <div class="wheel"></div>
+
+         <div class="mouse-icon">                        
+            <div class="wheel" ><p style="color:#FFFFFF; bottom: 0; width:100%;"><i class="fa fa-arrow-down"></i></p></div>
          </div>
       </section>
       <!-- End Home Section -->
@@ -1380,6 +1381,11 @@
          <a href="#home"><i class="fa fa-angle-up"></i></a>
       </div>
       <!-- Javascript files -->
+      <script>
+         $(document).ready(function(){
+             $('[data-toggle="tooltip"]').tooltip();   
+         });
+      </script>
       <script src="assets/js/jquery.js"></script>
       <script src="assets/bootstrap/js/bootstrap.min.js"></script>
       <script src="assets/js/jquery.stellar.min.js"></script>
@@ -1394,6 +1400,6 @@
       <script src="https://a.vimeocdn.com/js/froogaloop2.min.js"></script>
       <script src="assets/js/jquery.fitvids.js"></script> 
       <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-      <script src="assets/js/scripts.js"></script>
+      <script src="assets/js/scripts.js"></script>      
    </body>
 </html>
