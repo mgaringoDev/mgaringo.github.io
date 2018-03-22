@@ -44,7 +44,9 @@ for x in xrange(numberOfRows):
                             '<h4 class="modal-title">Description</h4>' \
                         '</div>' \
                         '<div class="modal-body">' \
-                            '<p>'+dataFrame['Description'][x]+'</p>' \
+                            '<center>'\
+                            '<p style="text-align:justify">'+dataFrame['Description'][x]+'</p>' \
+                            '</center>'\
                         '</div>' \
                         '<div class="modal-footer">' \
                             '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' \
@@ -75,8 +77,10 @@ for x in xrange(numberOfRows):
                             '<a >'+dataFrame['Year'][x]+'</a>' \
                             '</span>' \
                          '</div>' \
+                         '<center>'\
                          '<h2 class=\"entry-title\"><a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][x]+'\">'+dataFrame['Title'][x]+'</a></h2>' \
-                      '</header>' \
+                         '</center>'\
+                        '</header>' \
                       '<!-- .entry-header -->' \
                    '</article>' \
                    '<!-- /.col-sm-4 -->' \
