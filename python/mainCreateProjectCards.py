@@ -7,6 +7,7 @@ Created on Thu Mar 22 11:35:09 2018
 
 import pandas as pd
 
+#%% ----------------------------------------------------------- IO Stuff ------ 
 # Read the data
 dataFrame = pd.read_csv("projectsDB.csv");
 
@@ -14,13 +15,12 @@ dataFrame = pd.read_csv("projectsDB.csv");
 numberOfRows = dataFrame.shape[0];
 numberOfColoumns = dataFrame.shape[1];
 
-#%%
+#%% --------------------------------------------------- init readig file ------
 fileNameCard = 'card.txt';
 fileCard = open(fileNameCard,"w+");
 
 fileNameModal = 'modal.txt';
 fileModal = open(fileNameModal,"w+");
-
 
 currentCategoryCard = 'Nothing'
 currentProjectIDCard = 'Nothing'
@@ -28,6 +28,7 @@ currentProjectIDCard = 'Nothing'
 currentCategoryModal = 'Nothing'
 currentProjectIDModal = 'Nothing'
 
+#%% --------------------------------------------------- writing to file -------
 for x in xrange(numberOfRows):    
     
     #% --------------------- This portion writes to the modal text file ---------------------------------------------------------
@@ -54,44 +55,38 @@ for x in xrange(numberOfRows):
             '\n'
     fileModal.write(htmlModalString);
     
-    
-    
-#    #% --------------------- This portion writes to the card text file ---------------------------------------------------------
-#    if(currentCategoryCard != dataFrame['Category'][x]):
-#        fileCard.write('<!-- ----------------------- %s Projects ------------------- -->\n' % dataFrame['Category'][x]);
-#        currentCategoryCard = dataFrame['Category'][x]
-#    fileCard.write('\t<!-- ----------------------- %s ------------------- -->\n' % dataFrame['ProjectID'][x]);
-#    htmlString = '<div class=\"portfolio-item col-xs-12 col-sm-4 col-md-3\" data-groups=\''+dataFrame['Tags'][x]+'\' style=\"color:blue;\">' \
-#                   '\t<article class=\"blog-post-wrapper\" >' \
-#                      '<div class=\"figure\">'\
-#                         '<div class=\"post-thumbnail\">' \
-#                           '<a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][x]+'\"><img src=\"'+dataFrame['ImageLocation'][x]+'" class=\"img-responsive \" alt=\"\"></a>' \
-#                         '</div>' \
-#                         '<i class=\"fa fa-file-photo-o\"></i>' \
-#                      '</div>' \
-#                      '<!-- /.figure -->' \
-#                      '<header class=\"entry-header\">' \
-#                         '<div class=\"post-meta\">' \
-#                            '<span class=\"the-category\"> ' \
-#                            '<a >'+dataFrame['Year'][x]+'</a>' \
-#                            '</span>' \
-#                         '</div>' \
-#                         '<h2 class=\"entry-title\"><a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][x]+'\">'+dataFrame['Title'][x]+'</a></h2>' \
-#                      '</header>' \
-#                      '<!-- .entry-header -->' \
-#                   '</article>' \
-#                   '<!-- /.col-sm-4 -->' \
-#                '</div>' \
-#                '<!-- /.portfolio-item -->' \
-#                '\n'
-#    fileCard.write(htmlString);
-    
-    
+    #% --------------------- This portion writes to the card text file ---------------------------------------------------------
+    if(currentCategoryCard != dataFrame['Category'][x]):
+        fileCard.write('<!-- ----------------------- %s Projects ------------------- -->\n' % dataFrame['Category'][x]);
+        currentCategoryCard = dataFrame['Category'][x]
+    fileCard.write('\t<!-- ----------------------- %s ------------------- -->\n' % dataFrame['ProjectID'][x]);
+    htmlString = '<div class=\"portfolio-item col-xs-12 col-sm-4 col-md-3\" data-groups=\''+dataFrame['Tags'][x]+'\' style=\"color:blue;\">' \
+                   '\t<article class=\"blog-post-wrapper\" >' \
+                      '<div class=\"figure\">'\
+                         '<div class=\"post-thumbnail\">' \
+                           '<a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][x]+'\"><img src=\"'+dataFrame['ImageLocation'][x]+'" class=\"img-responsive \" alt=\"\"></a>' \
+                         '</div>' \
+                         '<i class=\"fa fa-file-photo-o\"></i>' \
+                      '</div>' \
+                      '<!-- /.figure -->' \
+                      '<header class=\"entry-header\">' \
+                         '<div class=\"post-meta\">' \
+                            '<span class=\"the-category\"> ' \
+                            '<a >'+dataFrame['Year'][x]+'</a>' \
+                            '</span>' \
+                         '</div>' \
+                         '<h2 class=\"entry-title\"><a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][x]+'\">'+dataFrame['Title'][x]+'</a></h2>' \
+                      '</header>' \
+                      '<!-- .entry-header -->' \
+                   '</article>' \
+                   '<!-- /.col-sm-4 -->' \
+                '</div>' \
+                '<!-- /.portfolio-item -->' \
+                '\n'
+    fileCard.write(htmlString);    
 
- 
 fileCard.close() 
 fileModal.close()
 
-#%%
 
             
