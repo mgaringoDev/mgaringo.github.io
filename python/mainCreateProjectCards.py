@@ -12,7 +12,7 @@ import numpy as np
 dataFrame = pd.read_csv("projectsDB.csv");
 
 # Get the dimensions of the data
-numberOfRows = dataFrame.shape[x];
+numberOfRows = dataFrame.shape[0];
 numberOfColoumns = dataFrame.shape[1];
 
 #%%
@@ -22,7 +22,7 @@ file = open(fileName,"w+");
 currentCategory = 'Nothing'
 currentProjectID = 'Nothing'
 
-for x in xrange(3):
+for x in xrange(numberOfRows):
     if(currentCategory != dataFrame['Category'][x]):
         file.write('<!-- ----------------------- %s Projects ------------------- -->\n' % dataFrame['Category'][x]);
         currentCategory = dataFrame['Category'][x]
