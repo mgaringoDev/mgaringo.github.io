@@ -12,38 +12,45 @@ import numpy as np
 dataFrame = pd.read_csv("projectsDB.csv");
 
 # Get the dimensions of the data
-numberOfRows = dataFrame.shape[0];
+numberOfRows = dataFrame.shape[x];
 numberOfColoumns = dataFrame.shape[1];
 
 #%%
 fileName = 'testfile.txt';
 file = open(fileName,"w+");
- 
-file.write('<!-- ----------------------- %s Projects ------------------- -->\n' % dataFrame['Category'][0]);
-file.write('\t<!-- ----------------------- %s ------------------- -->\n' % dataFrame['ProjectID'][0]);
-htmlString = '<div class=\"portfolio-item col-xs-12 col-sm-4 col-md-3\" data-groups=\''+dataFrame['Tags'][0]+'\' style=\"color:blue;\">' \
-               '\t<article class=\"blog-post-wrapper\" >' \
-                  '<div class=\"figure\">'\
-                     '<div class=\"post-thumbnail\">' \
-                       '<a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][0]+'\"><img src=\"'+dataFrame['ImageLocation'][0]+'" class=\"img-responsive \" alt=\"\"></a>' \
-                     '</div>' \
-                     '<i class=\"fa fa-file-photo-o\"></i>' \
-                  '</div>' \
-                  '<!-- /.figure -->' \
-                  '<header class=\"entry-header\">' \
-                     '<div class=\"post-meta\">' \
-                        '<span class=\"the-category\"> ' \
-                        '<a >'+dataFrame['Year'][0]+'</a>' \
-                        '</span>' \
-                     '</div>' \
-                     '<h2 class=\"entry-title\"><a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][0]+'\">'+dataFrame['Title'][0]+'</a></h2>' \
-                  '</header>' \
-                  '<!-- .entry-header -->' \
-               '</article>' \
-               '<!-- /.col-sm-4 -->' \
-            '</div>' \
-            '<!-- /.portfolio-item -->' 
-file.write(htmlString);
+
+currentCategory = 'Nothing'
+currentProjectID = 'Nothing'
+
+for x in xrange(3):
+    if(currentCategory != dataFrame['Category'][x]):
+        file.write('<!-- ----------------------- %s Projects ------------------- -->\n' % dataFrame['Category'][x]);
+        currentCategory = dataFrame['Category'][x]
+    file.write('\t<!-- ----------------------- %s ------------------- -->\n' % dataFrame['ProjectID'][x]);
+    htmlString = '<div class=\"portfolio-item col-xs-12 col-sm-4 col-md-3\" data-groups=\''+dataFrame['Tags'][x]+'\' style=\"color:blue;\">' \
+                   '\t<article class=\"blog-post-wrapper\" >' \
+                      '<div class=\"figure\">'\
+                         '<div class=\"post-thumbnail\">' \
+                           '<a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][x]+'\"><img src=\"'+dataFrame['ImageLocation'][x]+'" class=\"img-responsive \" alt=\"\"></a>' \
+                         '</div>' \
+                         '<i class=\"fa fa-file-photo-o\"></i>' \
+                      '</div>' \
+                      '<!-- /.figure -->' \
+                      '<header class=\"entry-header\">' \
+                         '<div class=\"post-meta\">' \
+                            '<span class=\"the-category\"> ' \
+                            '<a >'+dataFrame['Year'][x]+'</a>' \
+                            '</span>' \
+                         '</div>' \
+                         '<h2 class=\"entry-title\"><a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][x]+'\">'+dataFrame['Title'][x]+'</a></h2>' \
+                      '</header>' \
+                      '<!-- .entry-header -->' \
+                   '</article>' \
+                   '<!-- /.col-sm-4 -->' \
+                '</div>' \
+                '<!-- /.portfolio-item -->' \
+                '\n'
+    file.write(htmlString);
 
  
 file.close() 
@@ -59,11 +66,11 @@ longStr = 'This is a very long %s ' \
 longStr
 
 #%%
-htmlString = '<div class=\"portfolio-item col-xs-12 col-sm-4 col-md-3\" data-groups=\''+dataFrame['Tags'][0]+'\' style=\"color:blue;\">' \
+htmlString = '<div class=\"portfolio-item col-xs-12 col-sm-4 col-md-3\" data-groups=\''+dataFrame['Tags'][x]+'\' style=\"color:blue;\">' \
                '\t<article class=\"blog-post-wrapper\" >' \
                   '<div class=\"figure\">'\
                      '<div class=\"post-thumbnail\">' \
-                       '<a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][0]+'\"><img src=\"'+dataFrame['ImageLocation'][0]+'" class=\"img-responsive \" alt=\"\"></a>' \
+                       '<a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][x]+'\"><img src=\"'+dataFrame['ImageLocation'][x]+'" class=\"img-responsive \" alt=\"\"></a>' \
                      '</div>' \
                      '<i class=\"fa fa-file-photo-o\"></i>' \
                   '</div>' \
@@ -71,10 +78,10 @@ htmlString = '<div class=\"portfolio-item col-xs-12 col-sm-4 col-md-3\" data-gro
                   '<header class=\"entry-header\">' \
                      '<div class=\"post-meta\">' \
                         '<span class=\"the-category\"> ' \
-                        '<a >'+dataFrame['Year'][0]+'</a>' \
+                        '<a >'+dataFrame['Year'][x]+'</a>' \
                         '</span>' \
                      '</div>' \
-                     '<h2 class=\"entry-title\"><a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][0]+'\">'+dataFrame['Title'][0]+'</a></h2>' \
+                     '<h2 class=\"entry-title\"><a href=\"#\" data-toggle=\"modal\" data-target=\"#'+dataFrame['ProjectID'][x]+'\">'+dataFrame['Title'][x]+'</a></h2>' \
                   '</header>' \
                   '<!-- .entry-header -->' \
                '</article>' \
@@ -104,5 +111,5 @@ htmlString = '<div class=\"portfolio-item col-xs-12 col-sm-4 col-md-3\" data-gro
                '<!-- /.col-sm-4 -->' \
             '</div>' \
             '<!-- /.portfolio-item -->' \
-            % (dataFrame['Tags'][0],dataFrame['ProjectID'][0],dataFrame['ImageLocation'][0],dataFrame['Year'][0],dataFrame['ProjectID'][0],dataFrame['Title'][0])        
+            % (dataFrame['Tags'][x],dataFrame['ProjectID'][x],dataFrame['ImageLocation'][x],dataFrame['Year'][x],dataFrame['ProjectID'][x],dataFrame['Title'][x])        
             
